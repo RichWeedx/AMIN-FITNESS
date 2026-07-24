@@ -15,145 +15,14 @@
     <link
       rel="preload"
       as="image"
-      href="/assets/h1_hero-Di-QpqtC.png"
+      href="/assets/h1_hero-C8K-guMf.png"
       fetchpriority="high"
     />
 
     <!-- CSS here -->
-    <link
-      rel="stylesheet"
-      crossorigin
-      href="/assets/custom-theme-ChAj7rpL.css"
-    />
-    <link
-      rel="stylesheet"
-      crossorigin
-      href="/assets/animated-headline-Bdde3w7Z.css"
-    />
-    <style>
-      .my-courses-btn {
-        display: inline-block;
-        font-family: Oswald, sans-serif;
-        font-size: 18px;
-        font-weight: 600;
-        letter-spacing: 1px;
-        line-height: 1;
-        text-transform: uppercase;
-        border: 2px solid #d4af37 !important;
-        background: #d4af37 !important;
-        color: #111 !important;
-        text-decoration: none;
-      }
-
-      .my-courses-btn:not(.hero-btn) {
-        padding: 27px 44px;
-      }
-
-      .hero-btn.border-btn {
-        display: inline-block;
-        padding: 32px 41px;
-        line-height: 1;
-        text-transform: uppercase;
-        border: 2px solid #d4af37 !important;
-        background: #d4af37 !important;
-        color: #111 !important;
-        text-decoration: none;
-      }
-
-      .btn,
-      .border-btn,
-      .boxed-btn,
-      .my-courses-btn {
-        position: relative;
-        overflow: hidden;
-        transition:
-          transform 0.28s ease,
-          box-shadow 0.28s ease,
-          background-color 0.28s ease,
-          border-color 0.28s ease,
-          color 0.28s ease;
-      }
-
-      .btn::before,
-      .border-btn::before,
-      .boxed-btn::before {
-        display: none !important;
-      }
-
-      .btn::after,
-      .border-btn::after,
-      .boxed-btn::after,
-      .my-courses-btn::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(
-          110deg,
-          rgba(255, 255, 255, 0) 25%,
-          rgba(255, 255, 255, 0.35) 50%,
-          rgba(255, 255, 255, 0) 75%
-        );
-        transform: translateX(-150%);
-        transition: transform 0.5s ease;
-        pointer-events: none;
-      }
-
-      .btn:hover,
-      .border-btn:hover,
-      .boxed-btn:hover,
-      .my-courses-btn:hover {
-        background: #fff !important;
-        border-color: #fff !important;
-        color: #111 !important;
-        transform: translateY(-3px);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.22);
-      }
-
-      .hero-btn.border-btn:hover {
-        background: #fff !important;
-        border-color: #fff !important;
-        color: #111 !important;
-      }
-
-      .my-courses-btn:hover {
-        background: #fff !important;
-        border-color: #fff !important;
-        color: #111 !important;
-      }
-
-      .btn:hover::after,
-      .border-btn:hover::after,
-      .boxed-btn:hover::after,
-      .my-courses-btn:hover::after {
-        transform: translateX(150%);
-      }
-
-      .btn:hover::before,
-      .border-btn:hover::before,
-      .boxed-btn:hover::before {
-        background: #fff !important;
-      }
-
-      .slider-area .hero__caption span {
-        font-size: 54px;
-      }
-
-      .slider-area .hero__caption .my-courses-btn.hero-btn {
-        margin-top: 18px;
-      }
-
-      @media (max-width: 575px) {
-        .slider-area .hero__caption span {
-          font-size: 24px;
-        }
-
-        .slider-area .hero__caption .my-courses-btn.hero-btn {
-          margin-top: 12px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" crossorigin href="/assets/custom-theme-DqB10nFC.css">
   </head>
-  <body class="black-bg">
+  <body id="top" class="black-bg home-page">
     <!-- ? Preloader Start -->
     <div id="preloader-active">
       <div class="preloader d-flex align-items-center justify-content-center">
@@ -194,22 +63,21 @@
               <div class="main-menu f-right d-none d-lg-block">
                 <nav>
                   <ul id="navigation">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="#top">Home</a></li>
                     <li><a href="courses.html">Training Plans</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-
-                    <li>
-                      <a href="https://form.typeform.com/to/pWJy7vZw"
-                        >Contact</a
-                      >
-                    </li>
+                    <li><a href="#transformations">Transformations</a></li>
+                    <li><a href="#about-me">About Me</a></li>
                   </ul>
                 </nav>
               </div>
               <!-- Header-btn -->
               <div class="header-btns d-none d-lg-block f-right">
                 <a href="https://form.typeform.com/to/pWJy7vZw" class="btn"
+                  ><i
+                    class="fas fa-comments"
+                    aria-hidden="true"
+                    style="color: #111111; margin-right: 8px; font-size: 1.12em"
+                  ></i
                   >Contact me</a
                 >
               </div>
@@ -234,14 +102,14 @@
                 <div class="col-xl-9 col-lg-9 col-md-10">
                   <div class="hero__caption">
                     <span data-animation="fadeInLeft" data-delay="0.1s"
-                      >Hi This is Amin Rahmani</span
+                      >1:1 Coaching</span
                     >
                     <h1 data-animation="fadeInLeft" data-delay="0.4s">
-                      Amin Rahmani
+                      Amin<br />Rahmani
                     </h1>
                     <a
                       href="courses.html"
-                      class="border-btn hero-btn my-courses-btn"
+                      class="btn"
                       data-animation="fadeInLeft"
                       data-delay="0.8s"
                       >My Training Plans</a
@@ -255,7 +123,7 @@
       </div>
       <!-- slider Area End-->
       <!-- Traning categories Start -->
-      <section class="traning-categories black-bg">
+      <section id="training-plans" class="traning-categories black-bg">
         <div class="container-fluid">
           <div class="row">
             <div class="col-xl-6 col-lg-6">
@@ -264,19 +132,23 @@
                   <img
                     loading="lazy"
                     decoding="async"
-                    src="/assets/cat1-eSZW85mF.png"
+                    src="/assets/cat1-6eIwE7Mz.png"
                     alt=""
                   />
                   <div class="topic-content-box">
                     <div class="topic-content">
-                      <h3>Personal traning</h3>
+                      <h3>Personal training</h3>
                       <p>
-                        Youâ€™ll look at graphs and charts in Task One, how to
-                        approach the task and <br />
-                        the language needed for a successful answer.
+                        You don't need another generic plan. <br />
+                        You need a coach who builds one around your life. <br />
+                        I help you build muscle, lose fat, and train with
+                        purpose. <br />
+                        Real accountability every step of the way. <br />
                       </p>
-                      <a href="courses.html" class="border-btn my-courses-btn"
-                        >View Training Plans</a
+                      <a
+                        href="https://form.typeform.com/to/pWJy7vZw"
+                        class="btn"
+                        >Apply For Coaching</a
                       >
                     </div>
                   </div>
@@ -289,17 +161,17 @@
                   <img
                     loading="lazy"
                     decoding="async"
-                    src="/assets/cat2-DueP2T7y.png"
+                    src="/assets/cat2-BFxj_1Y1.png"
                     alt=""
                   />
                   <div class="topic-content-box">
                     <div class="topic-content">
-                      <h3>What I Offer</h3>
-                      <p>
-                        Body Building, Muscle Gain, and Weight Loss programs
-                        designed around your goals.
-                      </p>
-                      <a href="services.html" class="btn">See Services</a>
+                      <h2 class="ready-start-title">READY TO START?</h2>
+                      <h3>HERE'S HOW IT WORKS</h3>
+                      <i
+                        class="fas fa-angle-double-down how-works-down-icon"
+                        aria-hidden="true"
+                      ></i>
                     </div>
                   </div>
                 </div>
@@ -310,281 +182,151 @@
       </section>
       <!-- Traning categories End-->
 
-      <!-- Courses area start -->
-      <section class="pricing-area section-padding40 fix">
+      <!-- How It Works Start -->
+      <section class="how-works-section">
         <div class="container">
-          <div class="row">
-            <div class="col-xl-12">
-              <div
-                class="section-tittle text-center mb-55 wow fadeInUp"
-                data-wow-duration="2s"
-                data-wow-delay=".1s"
-              >
-                <h2>Pricing</h2>
+          <div class="how-works-grid">
+            <article class="how-works-card">
+              <div class="how-works-step">
+                <span class="step-label">STEP</span>
+                <span class="step-number">01</span>
               </div>
-            </div>
+              <h3>Submit Your Application</h3>
+              <p>
+                Complete the application form so I can understand your goals,
+                experience level, and any injuries or limitations.
+              </p>
+            </article>
+
+            <article class="how-works-card">
+              <div class="how-works-step">
+                <span class="step-label">STEP</span>
+                <span class="step-number">02</span>
+              </div>
+              <h3>Book Your Call</h3>
+              <p>
+                Once I've reviewed your application, you'll receive a booking
+                link to schedule a call at a time that works for you.
+              </p>
+            </article>
+
+            <article class="how-works-card">
+              <div class="how-works-step">
+                <span class="step-label">STEP</span>
+                <span class="step-number">03</span>
+              </div>
+              <h3>Secure Your Place</h3>
+              <p>
+                Following our call, you'll receive a link to create your account
+                and complete payment. From there, you're officially in.
+              </p>
+            </article>
+
+            <article class="how-works-card">
+              <div class="how-works-step">
+                <span class="step-label">STEP</span>
+                <span class="step-number">04</span>
+              </div>
+              <h3>Get Set Up &amp; Start</h3>
+              <p>
+                Download the coaching app, access your personalised plan, log
+                your workouts, and hit the ground running from day one.
+              </p>
+            </article>
           </div>
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div
-                class="properties mb-30 wow fadeInUp"
-                data-wow-duration="1s"
-                data-wow-delay=".2s"
-              >
-                <div class="properties__card">
-                  <div class="about-icon">
-                    <img
-                      loading="lazy"
-                      decoding="async"
-                      src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='49.975'%20height='49.975'%20viewBox='0%200%2049.975%2049.975'%3e%3cpath%20id='price'%20d='M49.975,11.94,38.035,0,33.482,4.553,30.489,1.56,23.182,8.868l5.687,5.687L14.554,28.868,8.868,23.182,1.56,30.489l2.993,2.993L0,38.035l11.94,11.94,4.553-4.553,2.993,2.993,7.308-7.308L21.106,35.42,35.42,21.106l5.687,5.687,7.308-7.308-2.993-2.993ZM38.035,4.161l7.779,7.779-2.472,2.472L35.563,6.633ZM11.94,45.814,4.161,38.035l2.472-2.472,7.779,7.779Zm7.546-1.56L5.721,30.489l3.146-3.146L22.632,41.107Zm-.46-10.914-2.391-2.391L30.949,16.635l2.391,2.391ZM41.107,22.632,27.343,8.868l3.146-3.146L44.254,19.485Z'%20fill='%23fff'/%3e%3c/svg%3e"
-                      alt=""
-                    />
+        </div>
+      </section>
+      <!-- How It Works End -->
+
+      <!-- Transformations area start -->
+      <section
+        id="transformations"
+        class="transformations-area section-padding40 fix"
+      >
+        <div class="container">
+          <div
+            class="transformation-shell wow fadeInUp"
+            data-wow-duration="1.2s"
+            data-wow-delay=".1s"
+          >
+            <div class="row align-items-center">
+              <div class="col-xl-7 col-lg-7">
+                <div class="transformation-copy">
+                  <h2>
+                    <span class="guesswork-line">Hear From My Clients</span>
+                    <span>Results</span>
+                  </h2>
+                  <article
+                    class="transformation-review-card"
+                    aria-label="Client review preview"
+                  >
+                    <div class="review-avatar-placeholder">
+                      <img
+                        loading="lazy"
+                        decoding="async"
+                        src="/assets/pfp-CxTzQNcf.jpg"
+                        alt="Mohsen Argha profile photo"
+                      />
+                    </div>
+                    <div class="review-copy">
+                      <div class="review-topline">
+                        <h4>Mohsen Argha</h4>
+                        <p class="review-subtitle">Verified coaching client</p>
+                      </div>
+                      <div class="review-stars" aria-hidden="true">★★★★★</div>
+                      <p class="review-quote">
+                        Amin's coaching finally gave me structure. I dropped
+                        fat, got stronger every week, and stayed consistent for
+                        the first time.
+                      </p>
+                    </div>
+                  </article>
+                  <div
+                    class="before-after-placeholder"
+                    aria-label="Before and after transformation photos"
+                  >
+                    <div class="before-after-slot">
+                      <img
+                        loading="lazy"
+                        decoding="async"
+                        src="/assets/beforeimg-8Vd8c09G.png"
+                        alt="Client before transformation"
+                      />
+                    </div>
+                    <div class="before-after-slot">
+                      <img
+                        loading="lazy"
+                        decoding="async"
+                        src="/assets/afterimg-BARVMtBR.png"
+                        alt="Client after transformation"
+                      />
+                    </div>
                   </div>
-                  <div class="properties__caption">
-                    <span class="month">6 month</span>
-                    <p class="mb-25">$30/m <span>(Single class)</span></p>
-                    <div class="single-features">
-                      <div class="features-icon">
-                        <img
-                          loading="lazy"
-                          decoding="async"
-                          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='17.702'%20height='13'%20viewBox='0%200%2017.702%2013'%3e%3cpath%20id='check'%20d='M17.442,68.257a.885.885,0,0,0-1.252,0l-10.6,10.6L1.51,74.785A.885.885,0,0,0,.259,76.037l4.7,4.7a.885.885,0,0,0,1.252,0l11.23-11.23A.885.885,0,0,0,17.442,68.257Z'%20transform='translate(0%20-67.998)'%20fill='%23d4af37'/%3e%3c/svg%3e"
-                          alt=""
-                        />
-                      </div>
-                      <div class="features-caption">
-                        <p>Free riding</p>
-                      </div>
-                    </div>
-                    <div class="single-features">
-                      <div class="features-icon">
-                        <img
-                          loading="lazy"
-                          decoding="async"
-                          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='17.702'%20height='13'%20viewBox='0%200%2017.702%2013'%3e%3cpath%20id='check'%20d='M17.442,68.257a.885.885,0,0,0-1.252,0l-10.6,10.6L1.51,74.785A.885.885,0,0,0,.259,76.037l4.7,4.7a.885.885,0,0,0,1.252,0l11.23-11.23A.885.885,0,0,0,17.442,68.257Z'%20transform='translate(0%20-67.998)'%20fill='%23d4af37'/%3e%3c/svg%3e"
-                          alt=""
-                        />
-                      </div>
-                      <div class="features-caption">
-                        <p>Unlimited equipments</p>
-                      </div>
-                    </div>
-                    <div class="single-features">
-                      <div class="features-icon">
-                        <img
-                          loading="lazy"
-                          decoding="async"
-                          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='17.702'%20height='13'%20viewBox='0%200%2017.702%2013'%3e%3cpath%20id='check'%20d='M17.442,68.257a.885.885,0,0,0-1.252,0l-10.6,10.6L1.51,74.785A.885.885,0,0,0,.259,76.037l4.7,4.7a.885.885,0,0,0,1.252,0l11.23-11.23A.885.885,0,0,0,17.442,68.257Z'%20transform='translate(0%20-67.998)'%20fill='%23d4af37'/%3e%3c/svg%3e"
-                          alt=""
-                        />
-                      </div>
-                      <div class="features-caption">
-                        <p>Amin Rahmani</p>
-                      </div>
-                    </div>
-                    <div class="single-features">
-                      <div class="features-icon">
-                        <img
-                          loading="lazy"
-                          decoding="async"
-                          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='17.702'%20height='13'%20viewBox='0%200%2017.702%2013'%3e%3cpath%20id='check'%20d='M17.442,68.257a.885.885,0,0,0-1.252,0l-10.6,10.6L1.51,74.785A.885.885,0,0,0,.259,76.037l4.7,4.7a.885.885,0,0,0,1.252,0l11.23-11.23A.885.885,0,0,0,17.442,68.257Z'%20transform='translate(0%20-67.998)'%20fill='%23d4af37'/%3e%3c/svg%3e"
-                          alt=""
-                        />
-                      </div>
-                      <div class="features-caption">
-                        <p>Weight losing classes</p>
-                      </div>
-                    </div>
-                    <div class="single-features mb-20">
-                      <div class="features-icon">
-                        <img
-                          loading="lazy"
-                          decoding="async"
-                          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='17.702'%20height='13'%20viewBox='0%200%2017.702%2013'%3e%3cpath%20id='check'%20d='M17.442,68.257a.885.885,0,0,0-1.252,0l-10.6,10.6L1.51,74.785A.885.885,0,0,0,.259,76.037l4.7,4.7a.885.885,0,0,0,1.252,0l11.23-11.23A.885.885,0,0,0,17.442,68.257Z'%20transform='translate(0%20-67.998)'%20fill='%23d4af37'/%3e%3c/svg%3e"
-                          alt=""
-                        />
-                      </div>
-                      <div class="features-caption">
-                        <p>Month to mouth</p>
-                      </div>
-                    </div>
-                    <a href="#" class="border-btn border-btn2">Join Now</a>
-                  </div>
+                  <p class="transformation-client-note">
+                    Mohsen, one of my long term client's!
+                  </p>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div
-                class="properties mb-30 wow fadeInUp"
-                data-wow-duration="1s"
-                data-wow-delay=".4s"
-              >
-                <div class="properties__card">
-                  <div class="about-icon">
+              <div class="col-xl-5 col-lg-5">
+                <div
+                  class="phone-stack"
+                  aria-label="Transformation phone mockups"
+                >
+                  <div class="phone-holder phone-back">
                     <img
                       loading="lazy"
                       decoding="async"
-                      src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='49.975'%20height='49.975'%20viewBox='0%200%2049.975%2049.975'%3e%3cpath%20id='price'%20d='M49.975,11.94,38.035,0,33.482,4.553,30.489,1.56,23.182,8.868l5.687,5.687L14.554,28.868,8.868,23.182,1.56,30.489l2.993,2.993L0,38.035l11.94,11.94,4.553-4.553,2.993,2.993,7.308-7.308L21.106,35.42,35.42,21.106l5.687,5.687,7.308-7.308-2.993-2.993ZM38.035,4.161l7.779,7.779-2.472,2.472L35.563,6.633ZM11.94,45.814,4.161,38.035l2.472-2.472,7.779,7.779Zm7.546-1.56L5.721,30.489l3.146-3.146L22.632,41.107Zm-.46-10.914-2.391-2.391L30.949,16.635l2.391,2.391ZM41.107,22.632,27.343,8.868l3.146-3.146L44.254,19.485Z'%20fill='%23fff'/%3e%3c/svg%3e"
-                      alt=""
+                      src="/assets/portrait1-wMsHeNqV.png"
+                      alt="Coaching app transformation screen"
                     />
                   </div>
-                  <div class="properties__caption">
-                    <span class="month">6 month</span>
-                    <p class="mb-25">$30/m <span>(Single class)</span></p>
-                    <div class="single-features">
-                      <div class="features-icon">
-                        <img
-                          loading="lazy"
-                          decoding="async"
-                          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='17.702'%20height='13'%20viewBox='0%200%2017.702%2013'%3e%3cpath%20id='check'%20d='M17.442,68.257a.885.885,0,0,0-1.252,0l-10.6,10.6L1.51,74.785A.885.885,0,0,0,.259,76.037l4.7,4.7a.885.885,0,0,0,1.252,0l11.23-11.23A.885.885,0,0,0,17.442,68.257Z'%20transform='translate(0%20-67.998)'%20fill='%23d4af37'/%3e%3c/svg%3e"
-                          alt=""
-                        />
-                      </div>
-                      <div class="features-caption">
-                        <p>Free riding</p>
-                      </div>
-                    </div>
-                    <div class="single-features">
-                      <div class="features-icon">
-                        <img
-                          loading="lazy"
-                          decoding="async"
-                          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='17.702'%20height='13'%20viewBox='0%200%2017.702%2013'%3e%3cpath%20id='check'%20d='M17.442,68.257a.885.885,0,0,0-1.252,0l-10.6,10.6L1.51,74.785A.885.885,0,0,0,.259,76.037l4.7,4.7a.885.885,0,0,0,1.252,0l11.23-11.23A.885.885,0,0,0,17.442,68.257Z'%20transform='translate(0%20-67.998)'%20fill='%23d4af37'/%3e%3c/svg%3e"
-                          alt=""
-                        />
-                      </div>
-                      <div class="features-caption">
-                        <p>Unlimited equipments</p>
-                      </div>
-                    </div>
-                    <div class="single-features">
-                      <div class="features-icon">
-                        <img
-                          loading="lazy"
-                          decoding="async"
-                          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='17.702'%20height='13'%20viewBox='0%200%2017.702%2013'%3e%3cpath%20id='check'%20d='M17.442,68.257a.885.885,0,0,0-1.252,0l-10.6,10.6L1.51,74.785A.885.885,0,0,0,.259,76.037l4.7,4.7a.885.885,0,0,0,1.252,0l11.23-11.23A.885.885,0,0,0,17.442,68.257Z'%20transform='translate(0%20-67.998)'%20fill='%23d4af37'/%3e%3c/svg%3e"
-                          alt=""
-                        />
-                      </div>
-                      <div class="features-caption">
-                        <p>Amin Rahmani</p>
-                      </div>
-                    </div>
-                    <div class="single-features">
-                      <div class="features-icon">
-                        <img
-                          loading="lazy"
-                          decoding="async"
-                          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='17.702'%20height='13'%20viewBox='0%200%2017.702%2013'%3e%3cpath%20id='check'%20d='M17.442,68.257a.885.885,0,0,0-1.252,0l-10.6,10.6L1.51,74.785A.885.885,0,0,0,.259,76.037l4.7,4.7a.885.885,0,0,0,1.252,0l11.23-11.23A.885.885,0,0,0,17.442,68.257Z'%20transform='translate(0%20-67.998)'%20fill='%23d4af37'/%3e%3c/svg%3e"
-                          alt=""
-                        />
-                      </div>
-                      <div class="features-caption">
-                        <p>Weight losing classes</p>
-                      </div>
-                    </div>
-                    <div class="single-features mb-20">
-                      <div class="features-icon">
-                        <img
-                          loading="lazy"
-                          decoding="async"
-                          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='17.702'%20height='13'%20viewBox='0%200%2017.702%2013'%3e%3cpath%20id='check'%20d='M17.442,68.257a.885.885,0,0,0-1.252,0l-10.6,10.6L1.51,74.785A.885.885,0,0,0,.259,76.037l4.7,4.7a.885.885,0,0,0,1.252,0l11.23-11.23A.885.885,0,0,0,17.442,68.257Z'%20transform='translate(0%20-67.998)'%20fill='%23d4af37'/%3e%3c/svg%3e"
-                          alt=""
-                        />
-                      </div>
-                      <div class="features-caption">
-                        <p>Month to mouth</p>
-                      </div>
-                    </div>
-                    <a href="#" class="border-btn border-btn2">Join Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div
-                class="properties mb-30 wow fadeInUp"
-                data-wow-duration="1s"
-                data-wow-delay=".6s"
-              >
-                <div class="properties__card">
-                  <div class="about-icon">
+                  <div class="phone-holder phone-front">
                     <img
                       loading="lazy"
                       decoding="async"
-                      src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='49.975'%20height='49.975'%20viewBox='0%200%2049.975%2049.975'%3e%3cpath%20id='price'%20d='M49.975,11.94,38.035,0,33.482,4.553,30.489,1.56,23.182,8.868l5.687,5.687L14.554,28.868,8.868,23.182,1.56,30.489l2.993,2.993L0,38.035l11.94,11.94,4.553-4.553,2.993,2.993,7.308-7.308L21.106,35.42,35.42,21.106l5.687,5.687,7.308-7.308-2.993-2.993ZM38.035,4.161l7.779,7.779-2.472,2.472L35.563,6.633ZM11.94,45.814,4.161,38.035l2.472-2.472,7.779,7.779Zm7.546-1.56L5.721,30.489l3.146-3.146L22.632,41.107Zm-.46-10.914-2.391-2.391L30.949,16.635l2.391,2.391ZM41.107,22.632,27.343,8.868l3.146-3.146L44.254,19.485Z'%20fill='%23fff'/%3e%3c/svg%3e"
-                      alt=""
+                      src="/assets/portrait2-z0bZPKB7.png"
+                      alt="Coaching app workout tracking screen"
                     />
-                  </div>
-                  <div class="properties__caption">
-                    <span class="month">6 month</span>
-                    <p class="mb-25">$30/m <span>(Single class)</span></p>
-                    <div class="single-features">
-                      <div class="features-icon">
-                        <img
-                          loading="lazy"
-                          decoding="async"
-                          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='17.702'%20height='13'%20viewBox='0%200%2017.702%2013'%3e%3cpath%20id='check'%20d='M17.442,68.257a.885.885,0,0,0-1.252,0l-10.6,10.6L1.51,74.785A.885.885,0,0,0,.259,76.037l4.7,4.7a.885.885,0,0,0,1.252,0l11.23-11.23A.885.885,0,0,0,17.442,68.257Z'%20transform='translate(0%20-67.998)'%20fill='%23d4af37'/%3e%3c/svg%3e"
-                          alt=""
-                        />
-                      </div>
-                      <div class="features-caption">
-                        <p>Free riding</p>
-                      </div>
-                    </div>
-                    <div class="single-features">
-                      <div class="features-icon">
-                        <img
-                          loading="lazy"
-                          decoding="async"
-                          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='17.702'%20height='13'%20viewBox='0%200%2017.702%2013'%3e%3cpath%20id='check'%20d='M17.442,68.257a.885.885,0,0,0-1.252,0l-10.6,10.6L1.51,74.785A.885.885,0,0,0,.259,76.037l4.7,4.7a.885.885,0,0,0,1.252,0l11.23-11.23A.885.885,0,0,0,17.442,68.257Z'%20transform='translate(0%20-67.998)'%20fill='%23d4af37'/%3e%3c/svg%3e"
-                          alt=""
-                        />
-                      </div>
-                      <div class="features-caption">
-                        <p>Unlimited equipments</p>
-                      </div>
-                    </div>
-                    <div class="single-features">
-                      <div class="features-icon">
-                        <img
-                          loading="lazy"
-                          decoding="async"
-                          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='17.702'%20height='13'%20viewBox='0%200%2017.702%2013'%3e%3cpath%20id='check'%20d='M17.442,68.257a.885.885,0,0,0-1.252,0l-10.6,10.6L1.51,74.785A.885.885,0,0,0,.259,76.037l4.7,4.7a.885.885,0,0,0,1.252,0l11.23-11.23A.885.885,0,0,0,17.442,68.257Z'%20transform='translate(0%20-67.998)'%20fill='%23d4af37'/%3e%3c/svg%3e"
-                          alt=""
-                        />
-                      </div>
-                      <div class="features-caption">
-                        <p>Amin Rahmani</p>
-                      </div>
-                    </div>
-                    <div class="single-features">
-                      <div class="features-icon">
-                        <img
-                          loading="lazy"
-                          decoding="async"
-                          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='17.702'%20height='13'%20viewBox='0%200%2017.702%2013'%3e%3cpath%20id='check'%20d='M17.442,68.257a.885.885,0,0,0-1.252,0l-10.6,10.6L1.51,74.785A.885.885,0,0,0,.259,76.037l4.7,4.7a.885.885,0,0,0,1.252,0l11.23-11.23A.885.885,0,0,0,17.442,68.257Z'%20transform='translate(0%20-67.998)'%20fill='%23d4af37'/%3e%3c/svg%3e"
-                          alt=""
-                        />
-                      </div>
-                      <div class="features-caption">
-                        <p>Weight losing classes</p>
-                      </div>
-                    </div>
-                    <div class="single-features mb-20">
-                      <div class="features-icon">
-                        <img
-                          loading="lazy"
-                          decoding="async"
-                          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='17.702'%20height='13'%20viewBox='0%200%2017.702%2013'%3e%3cpath%20id='check'%20d='M17.442,68.257a.885.885,0,0,0-1.252,0l-10.6,10.6L1.51,74.785A.885.885,0,0,0,.259,76.037l4.7,4.7a.885.885,0,0,0,1.252,0l11.23-11.23A.885.885,0,0,0,17.442,68.257Z'%20transform='translate(0%20-67.998)'%20fill='%23d4af37'/%3e%3c/svg%3e"
-                          alt=""
-                        />
-                      </div>
-                      <div class="features-caption">
-                        <p>Month to mouth</p>
-                      </div>
-                    </div>
-                    <a href="#" class="border-btn border-btn2">Join Now</a>
                   </div>
                 </div>
               </div>
@@ -592,9 +334,9 @@
           </div>
         </div>
       </section>
-      <!-- Courses area End -->
+      <!-- Transformations area End -->
       <!--? About Area-2 Start -->
-      <section class="about-area2 fix pb-padding pt-50 pb-80">
+      <section id="about-me" class="about-area2 fix pb-padding pt-50 pb-80">
         <div class="support-wrapper align-items-center">
           <div class="right-content2">
             <!-- img -->
@@ -606,7 +348,7 @@
               <img
                 loading="lazy"
                 decoding="async"
-                src="/assets/about-DbxF8LPE.png"
+                src="/assets/about-CLxGwx96.png"
                 alt=""
               />
             </div>
@@ -621,21 +363,45 @@
               <div class="front-text">
                 <h2 class="">About Me</h2>
                 <p>
-                  Youâ€™ll look at graphs and charts in Task One, how to
-                  approach the task and the language needed for a successful
-                  answer. Youâ€™ll examine Task Two questions and learn how to
-                  plan, write and check academic essays.
+                  A plan only works if you actually follow it. That’s where I
+                  come in. I track your progress, review your training, and make
+                  adjustments based on how your body is responding. You’re not
+                  left to figure things out on your own. You’ve got someone
+                  keeping you on track, adjusting your programme, and making
+                  sure nothing gets in the way of your progress.
                 </p>
                 <p class="mb-40">
-                  Task One, how to approach the task and the language needed for
-                  a successful answer. Youâ€™ll examine Task Two questions and
-                  learn how to plan, write and check academic essays.
+                  With over 7 years of experience in fitness industry and
+                  helping over 50+ of clients achieve their fitness goals, you
+                  won't find a more dedicated coach to help you reach your
+                  goals! <br />
+                  <br />
+                  Follow me on Social Media to See more!
                 </p>
-                <a
-                  href="courses.html"
-                  class="border-btn hero-btn my-courses-btn"
-                  >My Training Plans</a
-                >
+                <div class="about-social-links" aria-label="Social links">
+                  <a
+                    href="https://www.instagram.com/aminfitness__?igsh=MXJvNjUydHp4NGE2ZQ=="
+                    aria-label="Instagram"
+                  >
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                  </a>
+                  <a
+                    href="https://www.tiktok.com/@aminfitness__?_r=1&_t=ZN-98Il01Ls5at"
+                    class="about-social-tiktok"
+                    aria-label="TikTok"
+                  >
+                    <i
+                      class="fab fa-tiktok fas fa-music"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://youtube.com/@aminfitness1"
+                    aria-label="YouTube"
+                  >
+                    <i class="fab fa-youtube" aria-hidden="true"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -645,109 +411,24 @@
       <!--? Blog Area Start -->
 
       <!-- Blog Area End -->
-
-      <!-- ? services-area -->
-      <section class="services-area">
-        <div class="container">
-          <div class="row justify-content-between">
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-              <div
-                class="single-services mb-40 wow fadeInUp"
-                data-wow-duration="1s"
-                data-wow-delay=".2s"
-              >
-                <div class="features-icon">
-                  <img
-                    loading="lazy"
-                    decoding="async"
-                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3OCIgaGVpZ2h0PSI3OCIgdmlld0JveD0iMCAwIDc4IDc4Ij4KICA8ZyBpZD0iaWNvbjIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zOTMgLTY5NDkpIj4KICAgIDxjaXJjbGUgaWQ9IkVsbGlwc2VfOCIgZGF0YS1uYW1lPSJFbGxpcHNlIDgiIGN4PSIzOSIgY3k9IjM5IiByPSIzOSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzkzIDY5NDkpIiBmaWxsPSJyZWQiLz4KICAgIDx0ZXh0IGlkPSJfIiBkYXRhLW5hbWU9Iu+huSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDE1IDY5OTkpIiBmaWxsPSIjZmZmIiBmb250LXNpemU9IjMwIiBmb250LWZhbWlseT0iRm9udEF3ZXNvbWU1RnJlZS1Tb2xpZCwgJ0ZvbnQgQXdlc29tZSA1IEZyZWUnIj48dHNwYW4geD0iMCIgeT0iMCI+76G5PC90c3Bhbj48L3RleHQ+CiAgPC9nPgo8L3N2Zz4K"
-                    alt=""
-                  />
-                </div>
-                <div class="features-caption">
-                  <h3>Phone</h3>
-                  <p>(90) 277 278 2566</p>
-                  <p>(78) 267 256 2578</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-              <div
-                class="single-services mb-40 wow fadeInUp"
-                data-wow-duration="2s"
-                data-wow-delay=".4s"
-              >
-                <div class="features-icon">
-                  <img
-                    loading="lazy"
-                    decoding="async"
-                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3OCIgaGVpZ2h0PSI3OCIgdmlld0JveD0iMCAwIDc4IDc4Ij4KICA8ZyBpZD0iaWNvbjMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zOTMgLTY5NDkpIj4KICAgIDxjaXJjbGUgaWQ9IkVsbGlwc2VfOCIgZGF0YS1uYW1lPSJFbGxpcHNlIDgiIGN4PSIzOSIgY3k9IjM5IiByPSIzOSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzkzIDY5NDkpIiBmaWxsPSJyZWQiLz4KICAgIDx0ZXh0IGlkPSJfIiBkYXRhLW5hbWU9Iu+DoCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDE1IDY5OTkpIiBmaWxsPSIjZmZmIiBmb250LXNpemU9IjMwIiBmb250LWZhbWlseT0iRm9udEF3ZXNvbWU1RnJlZS1SZWd1bGFyLCAnRm9udCBBd2Vzb21lIDUgRnJlZSciPjx0c3BhbiB4PSIwIiB5PSIwIj7vg6A8L3RzcGFuPjwvdGV4dD4KICA8L2c+Cjwvc3ZnPgo="
-                    alt=""
-                  />
-                </div>
-                <div class="features-caption">
-                  <h3>Email</h3>
-                  <p>jacson767@gmail.com</p>
-                  <p>contact56@zacsion.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
     <footer>
       <!--? Footer Start-->
       <div class="footer-area black-bg">
         <div class="container">
-          <div class="footer-top footer-padding">
-            <!-- Footer Menu -->
-            <div class="row">
-              <div class="col-xl-12">
-                <div class="single-footer-caption mb-50 text-center">
-                  <!-- logo -->
-                  <div
-                    class="footer-logo wow fadeInUp"
-                    data-wow-duration="1s"
-                    data-wow-delay=".2s"
-                  >
-                    <a href="index.html"
-                      ><img
-                        loading="lazy"
-                        decoding="async"
-                        src="data:image/png;base64,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"
-                        alt=""
-                    /></a>
-                  </div>
-                  <div
-                    class="footer-branding wow fadeInUp"
-                    data-wow-duration="1.5s"
-                    data-wow-delay=".3s"
-                  >
-                    <h3>Amin Fitness</h3>
-                  </div>
-                  <!-- social -->
-                  <div
-                    class="footer-social mt-30 wow fadeInUp"
-                    data-wow-duration="3s"
-                    data-wow-delay=".8s"
-                  >
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="https://bit.ly/sai4ull"
-                      ><i class="fab fa-facebook-f"></i
-                    ></a>
-                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div
+            class="footer-corner-brand wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay=".2s"
+          >
+            AMIN FITNESS
           </div>
           <!-- Footer Bottom -->
           <div class="footer-bottom">
             <div class="row d-flex align-items-center">
               <div class="col-lg-12">
                 <div class="footer-copy-right text-center">
-                  <p>All rights by Amin Rahmani</p>
+                  <p>© 2026 All Rights Reserved By Amin Rahmani</p>
                 </div>
               </div>
             </div>
