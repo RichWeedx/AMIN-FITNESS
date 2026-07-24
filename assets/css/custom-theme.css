@@ -1569,3 +1569,82 @@ section,
 .contact-info .media-body h3 a:focus {
   background: transparent !important;
 }
+
+/* ──────────────────────────────────────────
+   MOBILE NAV  – fix hamburger at all <992 px
+   (includes 820 px iPad Air / tablet sizes)
+────────────────────────────────────────── */
+@media (max-width: 991px) {
+  /* Prevent Bootstrap col-12 from forcing a new flex row */
+  .menu-wrapper > .col-12 {
+    flex: 0 0 auto;
+    max-width: none;
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+    position: static;
+  }
+
+  /* Bring mobile_menu back into normal flow (removes absolute-out-of-header bug) */
+  .mobile_menu {
+    position: relative;
+    right: auto;
+    width: auto;
+  }
+
+  /* Reset the negative offset that was compensating for wrong placement */
+  .mobile_menu .slicknav_menu .slicknav_btn {
+    top: 0 !important;
+  }
+
+  /* Anchor the slicknav_menu so the nav list can drop below the button */
+  .mobile_menu .slicknav_menu {
+    position: relative;
+  }
+
+  /* Nav dropdown overlays the page rather than pushing content down */
+  .mobile_menu .slicknav_menu .slicknav_nav {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    min-width: 220px;
+    background: rgba(9, 9, 9, 0.97) !important;
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    z-index: 9999;
+    margin-top: 2px !important;
+  }
+}
+
+/* ──────────────────────────────────────────
+   HERO CTA – centre "My Training Plans"
+   button on tablets / phones (<992 px)
+────────────────────────────────────────── */
+@media (max-width: 991px) {
+  .hero__caption {
+    text-align: center;
+  }
+}
+
+/* ──────────────────────────────────────────
+   PHONE STACK – caption in the left
+   empty space on tablets (768 – 991 px)
+────────────────────────────────────────── */
+.phone-app-caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 290px;
+  color: var(--ar-gold-bright);
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+  line-height: 1.35;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  pointer-events: none;
+  margin: 0;
+}
+
+.phone-app-caption br + br {
+  display: none;
+}
