@@ -1707,7 +1707,7 @@ section,
     background: transparent !important;
     font-family: "Oswald", sans-serif !important;
     font-size: 15px !important;
-    font-weight: 300 !important;
+    font-weight: 200 !important;
     letter-spacing: 0.8px;
     text-transform: uppercase;
     padding: 9px 14px !important;
@@ -1740,8 +1740,8 @@ section,
   }
 
   .main-header .logo img {
-    width: 30px;
-    max-width: 30px;
+    width: 36px;
+    max-width: 36px;
   }
 
   .mobile_menu .slicknav_menu .slicknav_btn {
