@@ -422,16 +422,24 @@ input[type="reset"] {
 
 .how-works-section {
   background: var(--ar-black);
-  padding: 66px 0 36px;
+  padding: 70px 0 56px;
 }
 
 .transformations-area {
-  padding: 30px 0 64px;
+  padding: 70px 0 64px;
   background: var(--ar-black);
 }
 
 #about-me {
   padding-top: 36px !important;
+}
+
+.about-area2 .support-wrapper .left-content2 {
+  padding-right: 28px;
+}
+
+.about-area2 .support-wrapper .left-content2 .section-tittle2 h2 {
+  margin-bottom: 18px;
 }
 
 .transformation-shell {
@@ -837,7 +845,7 @@ input[type="reset"] {
   }
 
   .how-works-section {
-    padding: 58px 0 34px;
+    padding: 62px 0 44px;
   }
 
   .how-works-step {
@@ -863,11 +871,15 @@ input[type="reset"] {
   }
 
   .transformations-area {
-    padding: 30px 0 54px;
+    padding: 52px 0 56px;
   }
 
   #about-me {
-    padding-top: 30px !important;
+    padding-top: 34px !important;
+  }
+
+  .about-area2 .support-wrapper .left-content2 {
+    padding-right: 0;
   }
 
   .transformation-shell {
@@ -1596,6 +1608,27 @@ section,
     position: relative;
     right: auto;
     width: auto;
+    display: block !important;
+    margin-left: auto;
+    z-index: 1001;
+  }
+
+  .mobile_menu .slicknav_menu {
+    position: relative;
+    display: block !important;
+    background: transparent !important;
+    padding: 0 !important;
+  }
+
+  .mobile_menu .slicknav_menu .slicknav_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 40px;
+    margin: 0 !important;
+    border: 1px solid rgba(212, 175, 55, 0.45);
+    background: rgba(9, 9, 9, 0.78) !important;
   }
 
   /* Reset the negative offset that was compensating for wrong placement */
@@ -1603,9 +1636,9 @@ section,
     top: 0 !important;
   }
 
-  /* Anchor the slicknav_menu so the nav list can drop below the button */
-  .mobile_menu .slicknav_menu {
-    position: relative;
+  .header-transparent .main-header {
+    background-color: rgba(9, 9, 9, 0.66);
+    backdrop-filter: blur(2px);
   }
 
   /* Nav dropdown overlays the page rather than pushing content down */
@@ -1644,8 +1677,8 @@ section,
 
   .section-padding30,
   .section-padding40 {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
   }
 
   .home-page .slider-area,
@@ -1733,8 +1766,8 @@ section,
   .how-works-section,
   .transformations-area,
   #about-me {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding-top: 24px !important;
+    padding-bottom: 28px !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
@@ -1742,8 +1775,8 @@ section,
   .transformation-shell,
   .about-area2 .support-wrapper .left-content2,
   .about-area2 .support-wrapper .right-content2 {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
