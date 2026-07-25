@@ -52,22 +52,6 @@ html {
 }
 
 .header-sticky.sticky-bar {
-  
-  .mobile_menu .slicknav_menu .slicknav_nav a,
-  .mobile_menu .slicknav_menu .slicknav_nav a:visited {
-    color: var(--ar-text) !important;
-    background: transparent !important;
-  }
-  
-  .mobile_menu .slicknav_menu .slicknav_nav a:hover,
-  .mobile_menu .slicknav_menu .slicknav_nav a:focus {
-    color: var(--ar-gold) !important;
-    background: rgba(212, 175, 55, 0.12) !important;
-  }
-  
-  .mobile_menu .slicknav_menu .slicknav_icon-bar {
-    background-color: var(--ar-gold) !important;
-  }
   background-color: rgba(9, 9, 9, 0.75) !important;
   background-image: none !important;
   filter: none !important;
@@ -77,9 +61,9 @@ html {
 body,
 .black-bg,
 footer,
-    text-shadow: 
-      0 2px 8px rgba(0, 0, 0, 0.9), 
-      0 0 14px rgba(0, 0, 0, 0.7);
+.footer-area {
+  background-color: var(--ar-black);
+  color: var(--ar-text);
 }
 
 .white-bg,
@@ -1475,6 +1459,9 @@ section,
 
   .slider-area .hero__caption span {
     font-size: 24px;
+    text-shadow:
+      0 2px 8px rgba(0, 0, 0, 0.9),
+      0 0 14px rgba(0, 0, 0, 0.7);
   }
 
   .slider-area .hero__caption h1 {
@@ -1628,6 +1615,58 @@ section,
     border: 1px solid rgba(212, 175, 55, 0.15);
     z-index: 9999;
     margin-top: 2px !important;
+  }
+
+  .mobile_menu .slicknav_menu .slicknav_nav a,
+  .mobile_menu .slicknav_menu .slicknav_nav a:visited {
+    color: var(--ar-text) !important;
+    background: transparent !important;
+  }
+
+  .mobile_menu .slicknav_menu .slicknav_nav a:hover,
+  .mobile_menu .slicknav_menu .slicknav_nav a:focus {
+    color: var(--ar-gold) !important;
+    background: rgba(212, 175, 55, 0.12) !important;
+  }
+
+  .mobile_menu .slicknav_menu .slicknav_icon-bar {
+    background-color: var(--ar-gold) !important;
+  }
+}
+
+@media (max-width: 433px) and (max-height: 757px) {
+  .slider-height {
+    height: clamp(290px, 66vw, 420px);
+  }
+
+  .section-padding30,
+  .section-padding40 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .home-page .slider-area,
+  .home-page .traning-categories,
+  .home-page .services-area,
+  .home-page .team-area,
+  .courses-page .team-area,
+  .courses-page .personal-training-panel {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .courses-page .team-area {
+    padding-bottom: 0 !important;
+  }
+
+  .courses-page .team-area .single-cat,
+  .courses-page .personal-training-panel .single-topic {
+    margin-bottom: 0 !important;
+  }
+
+  .courses-page .personal-training-panel .single-topic .topic-img {
+    padding-top: 36px;
+    padding-bottom: 32px;
   }
 }
 
