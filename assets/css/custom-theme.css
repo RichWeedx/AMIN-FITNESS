@@ -1038,6 +1038,8 @@ input[type="reset"] {
 @media (max-width: 575px) {
   .traning-categories .single-topic .topic-img {
     height: 320px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
   }
 }
 
