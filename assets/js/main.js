@@ -187,11 +187,15 @@
   });
 
   /* 10. WOW active */
-  new WOW().init();
+  if (typeof WOW !== "undefined") {
+    new WOW().init();
+  }
 
   // 11. ---- Mailchimp js --------//
   function mailChimp() {
-    $("#mc_embed_signup").find("form").ajaxChimp();
+    if ($.fn.ajaxChimp && $("#mc_embed_signup").length) {
+      $("#mc_embed_signup").find("form").ajaxChimp();
+    }
   }
   mailChimp();
 
@@ -214,19 +218,27 @@
   }
 
   /* 13. counterUp*/
-  $(".counter").counterUp({
-    delay: 10,
-    time: 3000,
-  });
+  if ($.fn.counterUp && $(".counter").length) {
+    $(".counter").counterUp({
+      delay: 10,
+      time: 3000,
+    });
+  }
 
   /* 14. Datepicker */
-  $("#datepicker1").datepicker();
+  if ($.fn.datepicker && $("#datepicker1").length) {
+    $("#datepicker1").datepicker();
+  }
 
   // 15. Time Picker
-  $("#timepicker").timepicker();
+  if ($.fn.timepicker && $("#timepicker").length) {
+    $("#timepicker").timepicker();
+  }
 
   //16. Overlay
-  $(".snake").snakeify({
-    speed: 200,
-  });
+  if ($.fn.snakeify && $(".snake").length) {
+    $(".snake").snakeify({
+      speed: 200,
+    });
+  }
 })(jQuery);

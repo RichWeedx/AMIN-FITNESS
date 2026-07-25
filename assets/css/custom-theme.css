@@ -1657,6 +1657,13 @@ section,
   .mobile_menu .slicknav_menu .slicknav_nav a:visited {
     color: var(--ar-text) !important;
     background: transparent !important;
+    font-family: "Oswald", sans-serif !important;
+    font-size: 19px !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.25px;
+    text-transform: none;
+    padding: 10px 14px !important;
+    line-height: 1.2 !important;
   }
 
   .mobile_menu .slicknav_menu .slicknav_nav a:hover,

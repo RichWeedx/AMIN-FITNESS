@@ -9,7 +9,7 @@ const htmlEntries = Object.fromEntries(
 );
 
 export default defineConfig({
-  base: "/AMIN-FITNESS/",
+  base: "./",
   server: {
     host: true,
     port: 5173,
