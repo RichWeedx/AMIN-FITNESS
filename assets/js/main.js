@@ -10,20 +10,36 @@
   });
 
   /* 2. sticky And Scroll UP */
-  $(window).on("scroll", function () {
+  var isTickingScroll = false;
+  var isStickyActive = false;
+  var isBackTopVisible = false;
+
+  function updateScrollUi() {
     var scroll = $(window).scrollTop();
-    if (scroll < 1) {
-      $(".header-sticky").removeClass("sticky-bar");
-    } else {
-      $(".header-sticky").addClass("sticky-bar");
+    var shouldBeSticky = scroll >= 1;
+    var shouldShowBackTop = scroll >= 400;
+
+    if (shouldBeSticky !== isStickyActive) {
+      isStickyActive = shouldBeSticky;
+      $(".header-sticky").toggleClass("sticky-bar", shouldBeSticky);
     }
 
-    if (scroll < 400) {
-      $("#back-top").fadeOut(500);
-    } else {
-      $("#back-top").fadeIn(500);
+    if (shouldShowBackTop !== isBackTopVisible) {
+      isBackTopVisible = shouldShowBackTop;
+      $("#back-top").stop(true, true).fadeToggle(180);
+    }
+
+    isTickingScroll = false;
+  }
+
+  $(window).on("scroll", function () {
+    if (!isTickingScroll) {
+      window.requestAnimationFrame(updateScrollUi);
+      isTickingScroll = true;
     }
   });
+
+  updateScrollUi();
 
   // Scroll Up
   $("#back-top a").on("click", function () {
@@ -51,6 +67,19 @@
   // h1-hero-active
   function mainSlider() {
     var BasicSlider = $(".slider-active");
+    if (!BasicSlider.length) {
+      return;
+    }
+
+    var sliderItems = BasicSlider.find(".single-slider");
+    if (sliderItems.length <= 1) {
+      var $singleAnimatingElements = sliderItems
+        .first()
+        .find("[data-animation]");
+      doAnimations($singleAnimatingElements);
+      return;
+    }
+
     BasicSlider.on("init", function (e, slick) {
       var $firstAnimatingElements = $(".single-slider:first-child").find(
         "[data-animation]",

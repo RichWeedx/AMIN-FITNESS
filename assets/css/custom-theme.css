@@ -647,6 +647,7 @@ input[type="reset"] {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 56px 22px;
+  padding-top: 44px;
 }
 
 .how-works-card {
@@ -759,6 +760,7 @@ input[type="reset"] {
   .how-works-grid {
     grid-template-columns: 1fr;
     gap: 52px;
+    padding-top: 38px;
   }
 
   .how-works-card {
@@ -1618,6 +1620,7 @@ section,
     display: block !important;
     background: transparent !important;
     padding: 0 !important;
+    min-width: 46px;
   }
 
   .mobile_menu .slicknav_menu .slicknav_btn {
@@ -1627,8 +1630,23 @@ section,
     width: 46px;
     height: 40px;
     margin: 0 !important;
+    float: none !important;
+    right: auto !important;
     border: 1px solid rgba(212, 175, 55, 0.45);
-    background: rgba(9, 9, 9, 0.78) !important;
+    background: rgba(9, 9, 9, 0.94) !important;
+  }
+
+  .mobile_menu .slicknav_menu .slicknav_icon,
+  .mobile_menu .slicknav_menu .slicknav_icon-bar {
+    display: block !important;
+    opacity: 1 !important;
+  }
+
+  .mobile_menu .slicknav_menu .slicknav_icon-bar {
+    width: 20px;
+    height: 2px;
+    margin: 3px 0;
+    background-color: var(--ar-gold) !important;
   }
 
   /* Reset the negative offset that was compensating for wrong placement */
@@ -1637,8 +1655,7 @@ section,
   }
 
   .header-transparent .main-header {
-    background-color: rgba(9, 9, 9, 0.66);
-    backdrop-filter: blur(2px);
+    background-color: rgba(9, 9, 9, 0.86);
   }
 
   /* Nav dropdown overlays the page rather than pushing content down */
@@ -1777,6 +1794,10 @@ section,
     padding-bottom: 28px !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
+  }
+
+  .how-works-grid {
+    padding-top: 34px;
   }
 
   .transformation-shell,
