@@ -1703,3 +1703,67 @@ section,
 .phone-app-caption br + br {
   display: none;
 }
+
+.phone-photo-header {
+  margin: 12px 0 0;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 19px;
+  line-height: 1.28;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--ar-gold-bright);
+  text-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.78),
+    0 0 12px rgba(0, 0, 0, 0.62);
+}
+
+@media (max-width: 433px) and (max-height: 757px) {
+  .how-works-section,
+  .transformations-area,
+  #about-me {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .transformation-shell,
+  .about-area2 .support-wrapper .left-content2,
+  .about-area2 .support-wrapper .right-content2 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .about-area2 .support-wrapper {
+    justify-content: center;
+  }
+
+  .about-area2 .support-wrapper .left-content2,
+  .about-area2 .support-wrapper .right-content2 {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    text-align: center;
+  }
+
+  .about-area2 .support-wrapper .left-content2 .front-text {
+    margin: 0 auto;
+    max-width: 92%;
+  }
+
+  .about-social-links {
+    justify-content: center !important;
+    margin-top: 12px;
+  }
+
+  .phone-photo-header {
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 1.3;
+  }
+}
