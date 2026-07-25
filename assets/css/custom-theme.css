@@ -1720,6 +1720,14 @@ section,
     0 0 12px rgba(0, 0, 0, 0.62);
 }
 
+.video-guidance-neon {
+  color: #fff7d6;
+  text-shadow:
+    0 0 5px rgba(237, 208, 113, 0.55),
+    0 0 10px rgba(237, 208, 113, 0.35),
+    0 0 16px rgba(237, 208, 113, 0.2);
+}
+
 @media (max-width: 433px) {
   .how-works-section,
   .transformations-area,
